@@ -6,7 +6,7 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    Metrixsdk.multiply(3, 7).then(setResult);
+    Metrixsdk.sendCustomEvent('232323', {key1: 'value2',sdsdsd:'sdsdsdsdsd',d:'sdww'})
   }, []);
 
   return (

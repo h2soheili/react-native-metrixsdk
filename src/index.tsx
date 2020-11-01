@@ -1,7 +1,8 @@
 import { NativeModules } from 'react-native';
 
+
 type MetrixsdkType = {
-  multiply(a: number, b: number): Promise<number>;
+  sendCustomEvent(slug:string,eventHashMap:Record<string, string>):Promise<boolean|object>;
 };
 
 const { Metrixsdk } = NativeModules;
