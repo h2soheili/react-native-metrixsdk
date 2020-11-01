@@ -29,6 +29,7 @@ MainApplication.java
 ## Usage
 
 ```js
+in App.js
 import Metrixsdk from "react-native-metrixsdk";
 
 // ...
