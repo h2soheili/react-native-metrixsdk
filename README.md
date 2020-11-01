@@ -6,6 +6,20 @@ metrix sdk custom
 
 ```sh
 npm install react-native-metrixsdk
+
+app/build.gradle
+  implementation 'ir.metrix:metrix:0.15.5'
+
+MainApplication.java
+  import ir.metrix.sdk.Metrix;
+  import ir.metrix.sdk.MetrixConfig;
+  
+  @Override
+  public void onCreate() {
+  ...
+  MetrixConfig metrixConfig = new  MetrixConfig(this, "appId from metrix dashboard");
+  Metrix.onCreate(metrixConfig);
+  }
 ```
 
 ## Usage
