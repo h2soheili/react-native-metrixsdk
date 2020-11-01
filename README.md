@@ -5,7 +5,8 @@ metrix sdk custom
 ## Installation
 
 ```sh
-add to pakcage.json
+add module to package.json
+
   "react-native-metrixsdk":"git://github.com/club9822/react-native-metrixsdk.git"
   
 npm i
