@@ -10,7 +10,7 @@ class MetrixsdkModule(reactContext: ReactApplicationContext) : ReactContextBaseJ
     // Example method
     // See https://facebook.github.io/react-native/docs/native-modules-android
 
-    // function for send events to metrix with using java sdk + this helper module
+    // functions for send events to metrix with using java sdk + this helper module
    @ReactMethod
    fun sendCustomEvent(slug:String, eventHashMap: ReadableMap, promise: Promise){
 
