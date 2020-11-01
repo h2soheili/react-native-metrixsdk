@@ -1,21 +1,46 @@
 # react-native-metrixsdk
 
-metrix sdk custom
+native kotlin module for metrix sdk to call custom event 
 
 ## Installation
 
 ```sh
-npm install react-native-metrixsdk
+add module to package.json
+
+  "react-native-metrixsdk":"git://github.com/club9822/react-native-metrixsdk.git"
+  
+npm i
+
+app/build.gradle
+  implementation 'ir.metrix:metrix:0.15.5'
+
+MainApplication.java
+  import ir.metrix.sdk.Metrix;
+  import ir.metrix.sdk.MetrixConfig;
+  
+  @Override
+  public void onCreate() {
+  ...
+  MetrixConfig metrixConfig = new  MetrixConfig(this, "appId from metrix dashboard");
+  Metrix.onCreate(metrixConfig);
+  }
 ```
 
 ## Usage
 
 ```js
+in App.js
 import Metrixsdk from "react-native-metrixsdk";
 
 // ...
-
-const result = await Metrixsdk.multiply(3, 7);
+          sendCustomEvent(slug:string,event:Record<string,string>):Promise
+          
+          {
+           string:string,
+           string:string,
+           ...
+          }
+Metrixsdk.sendCustomEvent('232323', {key1: 'value2',sdsdsd:'sdsdsdsdsd',d:'sdww'})
 ```
 
 ## Contributing
