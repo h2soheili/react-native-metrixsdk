@@ -14,8 +14,13 @@ npm install react-native-metrixsdk
 import Metrixsdk from "react-native-metrixsdk";
 
 // ...
-
-const result = await Metrixsdk.multiply(3, 7);
+          sendCustomEvent(slug:string,event:Record<string,string>)
+          {
+           string:string,
+           string:string,
+           ...
+          }
+Metrixsdk.sendCustomEvent('232323', {key1: 'value2',sdsdsd:'sdsdsdsdsd',d:'sdww'})
 ```
 
 ## Contributing
