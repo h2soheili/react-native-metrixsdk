@@ -5,7 +5,10 @@ metrix sdk custom
 ## Installation
 
 ```sh
-npm install react-native-metrixsdk
+add to pakcage.json
+  "react-native-metrixsdk":"git://github.com/club9822/react-native-metrixsdk.git"
+  
+npm i
 
 app/build.gradle
   implementation 'ir.metrix:metrix:0.15.5'
