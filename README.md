@@ -32,7 +32,8 @@ MainApplication.java
 import Metrixsdk from "react-native-metrixsdk";
 
 // ...
-          sendCustomEvent(slug:string,event:Record<string,string>)
+          sendCustomEvent(slug:string,event:Record<string,string>):Promise
+          
           {
            string:string,
            string:string,
