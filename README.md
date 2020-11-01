@@ -1,6 +1,6 @@
 # react-native-metrixsdk
 
-metrix sdk for call custom event 
+native kotlin module for metrix sdk to call custom event 
 
 ## Installation
 
