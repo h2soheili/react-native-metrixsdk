@@ -3,8 +3,6 @@ import { StyleSheet, View, Text } from 'react-native';
 import Metrixsdk from 'react-native-metrixsdk';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
   React.useEffect(() => {
     Metrixsdk.sendCustomEvent('232323', {key1: 'value2',sdsdsd:'sdsdsdsdsd',d:'sdww'})
   }, []);
